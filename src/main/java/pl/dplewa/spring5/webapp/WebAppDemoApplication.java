@@ -1,12 +1,12 @@
-package pl.dplewa.spring5webapp;
+package pl.dplewa.spring5.webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring5WebappApplication {
+public class WebAppDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Spring5WebappApplication.class, args);
+		SpringApplication.run(WebAppDemoApplication.class, args);
 	}
 }

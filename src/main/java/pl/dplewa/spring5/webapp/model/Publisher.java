@@ -1,10 +1,10 @@
-package pl.dplewa.spring5webapp.model;
+package pl.dplewa.spring5.webapp.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -13,29 +13,26 @@ import java.util.Set;
  * @author Dominik Plewa
  */
 @Entity
-public class Author {
+public class Publisher {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String firstName;
-    private String lastName;
+    private String name;
 
-    @ManyToMany(mappedBy = "authors")
+    @OneToMany(mappedBy = "publisher")
     private Set<Book> books = new HashSet<>();
 
-    public Author() {
+    public Publisher() {
         // empty default constructor
     }
 
-    public Author(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Publisher(String name) {
+        this.name = name;
     }
 
-    public Author(String firstName, String lastName, Set<Book> books) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Publisher(String name, Set<Book> books) {
+        this.name = name;
         this.books = books;
     }
 
@@ -47,20 +44,12 @@ public class Author {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Set<Book> getBooks() {
@@ -75,21 +64,21 @@ public class Author {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Author author = (Author) o;
-        return Objects.equals(id, author.id);
+        Publisher publisher = (Publisher) o;
+        return Objects.equals(id, publisher.id);
     }
 
     @Override
     public int hashCode() {
+
         return Objects.hash(id);
     }
 
     @Override
     public String toString() {
-        return "Author{" +
+        return "Publisher{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }

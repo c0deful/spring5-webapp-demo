@@ -1,10 +1,10 @@
-package pl.dplewa.spring5webapp.controllers;
+package pl.dplewa.spring5.webapp.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import pl.dplewa.spring5webapp.model.Book;
-import pl.dplewa.spring5webapp.repositories.BookRepository;
+import pl.dplewa.spring5.webapp.repositories.BookRepository;
+import pl.dplewa.spring5.webapp.model.Book;
 
 /**
  * @author Dominik Plewa

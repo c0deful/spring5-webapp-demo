@@ -1,8 +1,7 @@
-package pl.dplewa.spring5webapp.repositories;
+package pl.dplewa.spring5.webapp.repositories;
 
 import org.springframework.data.repository.CrudRepository;
-import pl.dplewa.spring5webapp.model.Author;
-import pl.dplewa.spring5webapp.model.Book;
+import pl.dplewa.spring5.webapp.model.Book;
 
 /**
  * @author Dominik Plewa

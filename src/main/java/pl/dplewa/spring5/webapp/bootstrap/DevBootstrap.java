@@ -1,14 +1,14 @@
-package pl.dplewa.spring5webapp.bootstrap;
+package pl.dplewa.spring5.webapp.bootstrap;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
-import pl.dplewa.spring5webapp.model.Author;
-import pl.dplewa.spring5webapp.model.Book;
-import pl.dplewa.spring5webapp.model.Publisher;
-import pl.dplewa.spring5webapp.repositories.AuthorRepository;
-import pl.dplewa.spring5webapp.repositories.BookRepository;
-import pl.dplewa.spring5webapp.repositories.PublisherRepository;
+import pl.dplewa.spring5.webapp.model.Book;
+import pl.dplewa.spring5.webapp.repositories.AuthorRepository;
+import pl.dplewa.spring5.webapp.repositories.BookRepository;
+import pl.dplewa.spring5.webapp.model.Author;
+import pl.dplewa.spring5.webapp.model.Publisher;
+import pl.dplewa.spring5.webapp.repositories.PublisherRepository;
 
 import java.util.Arrays;
 import java.util.Collections;
