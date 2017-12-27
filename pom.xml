@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pl.dplewa</groupId>
-	<artifactId>spring5-webapp</artifactId>
+	<artifactId>spring5-webapp-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring5-webapp</name>
-	<description>Demo project for Spring Boot</description>
+	<name>spring5-webapp-demo</name>
+	<description>Demo project for Spring Boot web application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
